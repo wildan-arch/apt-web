@@ -395,38 +395,33 @@ footer strong {
     font-size: 0.8rem;
   }
 }
-/* Styling Tombol Pesan di dalam Section */
 .btn-whatsapp {
-  display: inline-flex; /* Agar ikon dan teks sejajar rapi */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px; /* Jarak antara ikon dan teks */
+  gap: 12px;
 
-  background-color: #25d366; /* Warna Hijau WA */
+  background-color: #25d366;
   color: #ffffff;
 
-  padding: 1rem 2rem; /* Ukuran tombol yang pas untuk jempol di HP */
-  border-radius: 12px; /* Sudut melengkung modern */
-
+  padding: 1rem 2rem;
+  border-radius: 12px;
   text-decoration: none;
-  font-weight: 700; /* Teks tebal agar menonjol */
-  font-size: 1rem;
+  font-weight: 700;
 
-  width: 100%; /* Full width di HP agar mudah diklik */
-  max-width: 350px; /* Batas lebar agar tidak terlalu panjang di tablet */
-  margin: 1.5rem auto; /* Jarak atas-bawah dan tengahkan secara horizontal */
-
+  width: 100%;
+  max-width: 350px;
+  margin: 1.5rem auto;
   box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
   transition: all 0.3s ease;
 }
 
-/* Styling Khusus Ikon di dalam Tombol ini */
 .btn-whatsapp i[data-lucide] {
   width: 24px;
   height: 24px;
-  stroke: #ffffff; /* Warna ikon putih */
+  stroke: #ffffff;
   stroke-width: 2.5;
-  margin: 0; /* Reset margin agar tidak ikut aturan ikon global */
+  margin: 0;
 }
 
 /* Efek saat Di-hover atau Di-klik */
@@ -441,8 +436,8 @@ footer strong {
 }
 .fab-whatsapp {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 75px;
+  right: 25px;
   background-color: #25d366;
   color: white;
   padding: 12px 20px;
@@ -468,7 +463,7 @@ footer strong {
   width: 20px;
   height: 20px;
   stroke: white;
-  margin: 0; /* Menghilangkan margin auto yang kita buat sebelumnya */
+  margin: 0;
 }
 
 /* Opsional: Sembunyikan tulisan di layar yang sangat kecil agar hanya muncul ikon */
