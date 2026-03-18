@@ -112,8 +112,9 @@ main {
 /* section contact */
 .contact {
   padding: 3rem 1.25rem;
-  background-color: #f9f9f9; /* Warna abu-abu sangat muda agar beda dari section atasnya */
+  background-color: #f9f9f9;
   text-align: center;
+  margin-top: 2.25rem;
 }
 
 .contact h2 {
@@ -124,7 +125,6 @@ main {
 .contact-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* Jarak antar item kontak */
   align-items: center;
 }
 
