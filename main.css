@@ -1,0 +1,237 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto";
+}
+/* ================== base style hp ==================== */
+header .container {
+  display: flex;
+  justify-content: space-between; /* Membuat Logo di kiri, Nav di kanan */
+  align-items: center; /* Agar logo dan menu sejajar secara vertikal */
+  padding: 15px 5%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header span {
+  color: #0e858d;
+}
+
+/* Hilangkan titik pada list menu dan hilang saat tampilan hp */
+.nav-links {
+  display: none;
+  list-style: none;
+  gap: 20px;
+}
+
+/* Sembunyikan hamburger di laptop */
+#menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero {
+  text-align: center;
+  font-weight: 700;
+  padding: 1.5rem 1rem; /* more breathing room */
+}
+/* section service */
+.services h2 {
+  margin: 2rem;
+  text-align: center;
+}
+.service-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.service-item {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 0 1.25rem 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  text-align: center;
+}
+/* CSS untuk mengatur semua ikon Lucide */
+.icon {
+  width: 45px;
+  height: 45px;
+  stroke: #27ae60; /* Gunakan warna hijau khas apotek kamu */
+  stroke-width: 2;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* section about */
+.about {
+  width: 100%;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+.about-text {
+  text-align: center;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+  & h2 {
+    margin: 2rem;
+    text-wrap: balance;
+  }
+  & p {
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+}
+
+.about-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+/* style contact */
+/* section contact */
+.contact {
+  padding: 3rem 1.25rem;
+  background-color: #f9f9f9; /* Warna abu-abu sangat muda agar beda dari section atasnya */
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Jarak antar item kontak */
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Mengatur Ikon di Kontak */
+.contact-item i[data-lucide] {
+  width: 30px;
+  height: 30px;
+  stroke: #27ae60; /* Hijau Shabah */
+  margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+  color: #444;
+  line-height: 1.5;
+}
+/* Styling Tombol Pesan di dalam Section */
+.btn-whatsapp {
+  display: inline-flex; /* Agar ikon dan teks sejajar rapi */
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* Jarak antara ikon dan teks */
+
+  background-color: #25d366; /* Warna Hijau WA */
+  color: #ffffff;
+
+  padding: 1rem 2rem; /* Ukuran tombol yang pas untuk jempol di HP */
+  border-radius: 12px; /* Sudut melengkung modern */
+
+  text-decoration: none;
+  font-weight: 700; /* Teks tebal agar menonjol */
+  font-size: 1rem;
+
+  width: 100%; /* Full width di HP agar mudah diklik */
+  max-width: 350px; /* Batas lebar agar tidak terlalu panjang di tablet */
+  margin: 1.5rem auto; /* Jarak atas-bawah dan tengahkan secara horizontal */
+
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Styling Khusus Ikon di dalam Tombol ini */
+.btn-whatsapp i[data-lucide] {
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff; /* Warna ikon putih */
+  stroke-width: 2.5;
+  margin: 0; /* Reset margin agar tidak ikut aturan ikon global */
+}
+
+/* Efek saat Di-hover atau Di-klik */
+.btn-whatsapp:hover {
+  background-color: #128c7e; /* Hijau lebih gelap */
+  transform: translateY(-3px); /* Sedikit terangkat */
+  box-shadow: 0 6px 20px rgba(18, 140, 126, 0.4);
+}
+
+.btn-whatsapp:active {
+  transform: scale(0.98); /* Efek membal saat ditekan */
+}
+.fab-whatsapp {
+  position: fixed;
+  bottom: 20px; /* Jarak dari bawah layar */
+  right: 20px; /* Jarak dari kanan layar */
+  background-color: #25d366; /* Warna hijau khas WhatsApp */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px; /* Membuat lonjong/kapsul */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999; /* Agar selalu berada di paling depan/atas */
+  transition: transform 0.3s ease;
+}
+
+.fab-whatsapp:hover {
+  transform: scale(1.05); /* Sedikit membesar saat ditekan/di-hover */
+  background-color: #128c7e; /* Hijau lebih gelap */
+}
+
+/* CSS untuk Ikon di dalam tombol */
+.fab-whatsapp i[data-lucide] {
+  width: 20px;
+  height: 20px;
+  stroke: white;
+  margin: 0; /* Menghilangkan margin auto yang kita buat sebelumnya */
+}
+
+/* Opsional: Sembunyikan tulisan di layar yang sangat kecil agar hanya muncul ikon */
+@media (max-width: 400px) {
+  .fab-whatsapp span {
+    display: none;
+  }
+  .fab-whatsapp {
+    padding: 15px;
+    border-radius: 50%; /* Jadi bulat sempurna di HP kecil */
+  }
+}
+
+/* ================== tablet style ==================== */
